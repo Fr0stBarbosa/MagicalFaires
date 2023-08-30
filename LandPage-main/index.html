@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="icon" href="/imagens/magic.png" type="image/png">
+    <title>Magical Faires</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="imagens/logomagic.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Fadas</a></li>
+                <li><a href="#">O que há de  novo?</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header> <!--fim header-->
+
+        <div class="content">
+            <div class="textbox">
+                <img src="/imagens/giphy.gif" alt="">
+                <h2>Quer a magia das<br><span>fadas!</span></h2>
+                <p>Agende já com uma de nossas afiliadas e fique ainda mais bonitas.</p>
+                <a href="#">BUSCAR FADAS</a>
+            </div><!--fim do textbox-->
+            <div class="imgbox">
+                <img src="imagens/pepsi001.png" alt="" class="pepsi">
+
+            </div><!--fim do imgbox-->
+
+        </div><!--fim do content-->
+
+        <ul class="thumb">
+            <li><img src="imagens/pepsi001.png" onclick="imgSlider('imagens/pepsi001.png');changeBgcolor('#f378f5')"></li>
+            <li><img src="imagens/pepsi002.png" onclick="imgSlider('imagens/pepsi002.png');changeBgcolor('#e35f7a')"></li>
+            <li><img src="imagens/pepsi003.png" onclick="imgSlider('imagens/pepsi003.png');changeBgcolor('#ad4579')"></li>
+
+        </ul><!--fim do thumb-->
+
+        <ul class="sci">
+            <li><a href="#"><img src="imagens/facebook.png"></a></li>
+            <li><a href="#"><img src="imagens/twitter.png"></a></li>
+            <li><a href="#"><img src="imagens/instagram.png"></a></li>
+        </ul><!--fim do sci-->
+
+    </section><!--fim seção-->
+
+    <script type="text/javascript">
+        
+    function imgSlider(anything){
+        document.querySelector('.pepsi').src = anything;
+    }
+    function changeBgcolor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+
+    </script>
+    
+</body>
+</html>
