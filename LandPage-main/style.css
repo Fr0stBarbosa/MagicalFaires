@@ -166,3 +166,12 @@ header ul li a:hover{
 .sci li:hover{
     color: #00be19;
 }
+
+h1,h2,h3{
+    color: #fff;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
